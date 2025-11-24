@@ -56,7 +56,7 @@ function get_resourcefromid(ren::HRenderer{R}, id) where R <: RendererData
 	name = names[i]
     resources = ren.resources
 	if haskey(resources, name)
-		return resources[name].pool[i]
+		return resources[name].pool[id%steps]
 	end
 
 	error("resources $name is not registered yet in the renderer.")
@@ -64,7 +64,7 @@ end
 function register_resource(ren::HRenderer, res::T) where T <: AbstractResource
 	name = get_name(res)
 	resources = ren.resources
-	if fast_haskey(resources, name)
+	if haskey(resources, name)
 		addtopool!(resources[name], res)
 		return
 	end

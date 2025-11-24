@@ -230,7 +230,7 @@ function ExecuteCommands(ren)
 		commands = sorted_command_bypriority(cb;pass=pass)
 		for (signature, batch) in commands
 			targetid = get_cmd_targetid(signature)
-			callerid = get_cmd_commandid(signature)
+			callerid = get_cmd_callerid(signature)
 
 			execute_command(ren, targetid, callerid, batch.commands)
 		end
