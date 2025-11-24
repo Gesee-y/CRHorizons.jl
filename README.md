@@ -1,6 +1,6 @@
-# Horizons.jl: A 2D/3D Game Rendering Engine for Julia
+# CRHorizons.jl: A 2D/3D Game Rendering Engine for Julia
 
-**Horizons.jl** is a modular and backend-agnostic rendering engine optimized for 2D and 3D game development.  
+**CRHorizons.jl** is a modular and backend-agnostic rendering engine optimized for 2D and 3D game development.  
 It provides high-performance abstractions for real-time rendering, scene management, and custom shaders, all with a clean, command-buffer-driven API.
 
 ---
@@ -8,9 +8,9 @@ It provides high-performance abstractions for real-time rendering, scene managem
 ## Installation
 
 ```julia
-julia> ]add Horizons
+julia> ]add CRHorizons
 # or for the development version
-julia> ]add https://github.com/Gesee-y/Horizons.jl
+julia> ]add https://github.com/Gesee-y/CRHorizons.jl
 ```
 
 ---
